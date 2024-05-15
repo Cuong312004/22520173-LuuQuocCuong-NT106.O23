@@ -22,15 +22,6 @@ namespace Lab3
             udpClient = new UdpClient();
         }
 
-        private void btn_connect_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Bai1_UDP_Client_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_send_Click_1(object sender, EventArgs e)
         {
@@ -56,6 +47,11 @@ namespace Lab3
             {
                 MessageBox.Show("Số cổng không hợp lệ !", "Lỗi");
             }
+        }
+
+        private void Bai1_UDP_Client_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

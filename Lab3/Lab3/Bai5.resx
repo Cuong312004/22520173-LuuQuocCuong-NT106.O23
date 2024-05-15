@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>B1:  Chọn Server và bấm Listen
+B2:  Chọn Client, bấm connect, nhập tên món ăn và bấm thêm vào danh sách món ăn trên server
+B3:  Bấm Random để chọn ngẫu nhiên 1 món ăn có trong danh sách món ăn trên server</value>
+  </data>
 </root>
