@@ -36,6 +36,7 @@
             this.btnSend = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.listView2 = new System.Windows.Forms.ListView();
+            this.btnDisconnect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelName
@@ -82,7 +83,7 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(599, 380);
+            this.btnSend.Location = new System.Drawing.Point(563, 380);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(134, 40);
             this.btnSend.TabIndex = 6;
@@ -98,21 +99,33 @@
             this.listView1.Size = new System.Drawing.Size(599, 239);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // listView2
             // 
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(644, 13);
+            this.listView2.Location = new System.Drawing.Point(635, 12);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(144, 328);
             this.listView2.TabIndex = 8;
             this.listView2.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnDisconnect
+            // 
+            this.btnDisconnect.Location = new System.Drawing.Point(452, 293);
+            this.btnDisconnect.Name = "btnDisconnect";
+            this.btnDisconnect.Size = new System.Drawing.Size(134, 40);
+            this.btnDisconnect.TabIndex = 9;
+            this.btnDisconnect.Text = "Disconnect";
+            this.btnDisconnect.UseVisualStyleBackColor = true;
+            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
             // 
             // Bai6_Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnSend);
@@ -139,5 +152,6 @@
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.Button btnDisconnect;
     }
 }

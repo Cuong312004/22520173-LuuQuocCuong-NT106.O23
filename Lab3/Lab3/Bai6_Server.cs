@@ -17,6 +17,8 @@ namespace Lab3
     {
         private Thread serverThread;
         private Socket listenerSocket;
+
+        List<Socket> connectedSockets = new List<Socket>();
         public Bai6_Server()
         {
             InitializeComponent();
@@ -56,6 +58,11 @@ namespace Lab3
                         listView1.Items.Add(text);
                     });
                 }
+                foreach (Socket socket in connectedSockets)
+                {
+                    // Gửi tin nhắn qua socket
+                    socket.Send(Encoding.UTF8.GetBytes(text));
+                }
             }
         }
 
@@ -75,6 +82,7 @@ namespace Lab3
             while (true)
             {
                 var clientSocket = listenerSocket.Accept();
+                connectedSockets.Add(clientSocket);
                 Thread thread = new Thread(() => ReceiveData(clientSocket));
                 thread.Start();
             }
