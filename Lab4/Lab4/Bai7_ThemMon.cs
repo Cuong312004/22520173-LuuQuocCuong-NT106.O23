@@ -77,5 +77,10 @@ namespace Lab4
         {
             clear();
         }
+
+        private void Bai7_ThemMon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

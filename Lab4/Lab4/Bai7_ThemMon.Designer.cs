@@ -179,6 +179,7 @@
             this.Controls.Add(this.lblHNAG);
             this.Name = "Bai7_ThemMon";
             this.Text = "Bai7_ThemMon";
+            this.Load += new System.EventHandler(this.Bai7_ThemMon_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

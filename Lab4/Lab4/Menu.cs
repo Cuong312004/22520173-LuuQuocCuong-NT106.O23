@@ -12,7 +12,14 @@ namespace Lab4
 {
     public partial class Menu : Form
     {
+        Bai1 bai1 = new Bai1();
+        Bai2 bai2 = new Bai2();
+        Bai3 bai3 = new Bai3(); 
+        Bai4 bai4 = new Bai4(); 
+        Bai5 bai5 = new Bai5(); 
+        Bai6 bai6 = new Bai6(); 
         Bai7 bai7 = new Bai7(); 
+        
         public Menu()
         {
             InitializeComponent();
@@ -26,6 +33,36 @@ namespace Lab4
         private void Menu_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnBai1_Click(object sender, EventArgs e)
+        {
+            bai1.Show();
+        }
+
+        private void btnBai2_Click(object sender, EventArgs e)
+        {
+            bai2.Show();
+        }
+
+        private void btnBai3_Click(object sender, EventArgs e)
+        {
+            bai3.Show();
+        }
+
+        private void btnBai4_Click(object sender, EventArgs e)
+        {
+            bai4.Show();    
+        }
+
+        private void btnBai5_Click(object sender, EventArgs e)
+        {
+            bai5.Show();    
+        }
+
+        private void btnBai6_Click(object sender, EventArgs e)
+        {
+            bai6.Show();    
         }
     }
 }
