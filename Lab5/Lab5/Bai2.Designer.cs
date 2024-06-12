@@ -68,7 +68,7 @@ namespace Lab5
             // txt_password
             // 
             this.txt_password.Location = new System.Drawing.Point(92, 47);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(2);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(238, 22);
@@ -77,15 +77,15 @@ namespace Lab5
             // txt_email
             // 
             this.txt_email.Location = new System.Drawing.Point(92, 2);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(2);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(238, 22);
             this.txt_email.TabIndex = 3;
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(448, 19);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_login.Location = new System.Drawing.Point(745, 51);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(2);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(118, 29);
             this.btn_login.TabIndex = 4;
@@ -135,7 +135,7 @@ namespace Lab5
             // 
             this.cb_show_pass.AutoSize = true;
             this.cb_show_pass.Location = new System.Drawing.Point(233, 79);
-            this.cb_show_pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_show_pass.Margin = new System.Windows.Forms.Padding(2);
             this.cb_show_pass.Name = "cb_show_pass";
             this.cb_show_pass.Size = new System.Drawing.Size(124, 20);
             this.cb_show_pass.TabIndex = 10;
@@ -145,20 +145,22 @@ namespace Lab5
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 129);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(21, 165);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(602, 144);
+            this.dataGridView1.Size = new System.Drawing.Size(933, 403);
             this.dataGridView1.TabIndex = 15;
             // 
             // Bai2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 288);
+            this.ClientSize = new System.Drawing.Size(990, 597);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cb_show_pass);
             this.Controls.Add(this.lb_show_recent);
@@ -170,7 +172,7 @@ namespace Lab5
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.lb_pass);
             this.Controls.Add(this.lb_mail);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Bai2";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
