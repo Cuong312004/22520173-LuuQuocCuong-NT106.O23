@@ -16,5 +16,17 @@ namespace Lab5
         {
             InitializeComponent();
         }
+
+        private void clientBtn_Click(object sender, EventArgs e)
+        {
+            Bai5_Client client = new Bai5_Client();
+            client.Show();
+        }
+
+        private void serverBtn_Click(object sender, EventArgs e)
+        {
+            Bai5_Server server = new Bai5_Server();
+            server.Show();
+        }
     }
 }

@@ -140,6 +140,18 @@
     <Compile Include="Bai5.Designer.cs">
       <DependentUpon>Bai5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bai5_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai5_Client.Designer.cs">
+      <DependentUpon>Bai5_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bai5_Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai5_Server.Designer.cs">
+      <DependentUpon>Bai5_Server.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bai6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +195,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bai4_ProgressBarWithLabel.resx">
       <DependentUpon>Bai4_ProgressBarWithLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai5.resx">
+      <DependentUpon>Bai5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai5_Client.resx">
+      <DependentUpon>Bai5_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bai5_Server.resx">
+      <DependentUpon>Bai5_Server.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bai6.resx">
       <DependentUpon>Bai6.cs</DependentUpon>

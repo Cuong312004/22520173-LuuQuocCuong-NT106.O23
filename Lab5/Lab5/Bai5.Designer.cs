@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.serverBtn = new System.Windows.Forms.Button();
+            this.clientBtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // serverBtn
+            // 
+            this.serverBtn.Location = new System.Drawing.Point(158, 146);
+            this.serverBtn.Name = "serverBtn";
+            this.serverBtn.Size = new System.Drawing.Size(155, 96);
+            this.serverBtn.TabIndex = 0;
+            this.serverBtn.Text = "SERVER";
+            this.serverBtn.UseVisualStyleBackColor = true;
+            this.serverBtn.Click += new System.EventHandler(this.serverBtn_Click);
+            // 
+            // clientBtn
+            // 
+            this.clientBtn.Location = new System.Drawing.Point(466, 146);
+            this.clientBtn.Name = "clientBtn";
+            this.clientBtn.Size = new System.Drawing.Size(155, 96);
+            this.clientBtn.TabIndex = 1;
+            this.clientBtn.Text = "CLIENT";
+            this.clientBtn.UseVisualStyleBackColor = true;
+            this.clientBtn.Click += new System.EventHandler(this.clientBtn_Click);
+            // 
+            // Bai5
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Bai5";
+            this.Controls.Add(this.clientBtn);
+            this.Controls.Add(this.serverBtn);
+            this.Name = "Bai5";
+            this.Text = "Menu";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button serverBtn;
+        private System.Windows.Forms.Button clientBtn;
     }
 }

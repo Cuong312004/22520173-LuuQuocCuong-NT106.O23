@@ -84,6 +84,7 @@ namespace Lab5
         {
             if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
+                
                 // Lấy dòng được chọn
                 DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
 
@@ -94,17 +95,18 @@ namespace Lab5
 
 
                 // Lấy thông tin nội dung email
-                var emailContent = GetEmailContent(subject);
+                var emailContent = GetEmailContent(e.RowIndex);
 
                 // Hiển thị nội dung email trên form EmailContentForm
                 ShowEmailContentForm(from,to,subject,emailContent);
             }
         }
 
-        private string GetEmailContent(string subject)
+        private string GetEmailContent(int index)
         {
             var inbox = client.Inbox;
-            var message = inbox.GetMessage(inbox.Count - 1);
+            inbox.Open(FolderAccess.ReadOnly);
+            var message = inbox.GetMessage(inbox.Count - 1 - index);
             string content = "";
 
             // Kiểm tra xem email có phần multipart không
